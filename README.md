@@ -15,8 +15,11 @@ Deploy our web application on Kubernetes
 
 # Prerequisites
 Kubectl — communication tool we will use to communicate between our Kubernetes cluster and our machine. Installation instructions available on https://kubernetes.io/docs/tasks/tools/install-kubectl/
+
 AWS CLI — AWS tool which we will use to issue commands related to AWS configurations. To install follow https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
+
 Aws iam authenticator — Give permission with IAM roles to access our Kubernetes cluster. For installation https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html
+
 Terraform — Infrastructure As Code tool. For installation https://www.terraform.io/downloads.html
 
 Now, we can create a simple node.js web application that will print "Hello World"
@@ -26,7 +29,7 @@ Now, initialize the directory with npm by running below command:
 -> npm init
 now it will ask few configuration info, provide the same
 next run below command:
-// this is a framework to build web applocations
+# this is a framework to build web application
 -> npm install express --save
 
 Now, the webapp directory contains few folders and files basically some modules and configurations. Along with these files put "index.js" file and run below command:
