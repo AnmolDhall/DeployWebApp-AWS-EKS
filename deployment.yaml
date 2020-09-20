@@ -1,0 +1,20 @@
+apiVersion: appsv1
+kind: Deployment
+metadata:
+  name: webapp-demo
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+        - name: webapp
+          image: anmoldhall/webapp:latest
+          ports:
+            - containerPort: 3000
