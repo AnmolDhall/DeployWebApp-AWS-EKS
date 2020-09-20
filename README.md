@@ -22,6 +22,7 @@ Aws iam authenticator — Give permission with IAM roles to access our Kubernete
 
 Terraform — Infrastructure As Code tool. For installation https://www.terraform.io/downloads.html
 
+# Create web application
 Now, we can create a simple node.js web application that will print "Hello World"
 
 Firstly, create a directory, let's say "webapp"
