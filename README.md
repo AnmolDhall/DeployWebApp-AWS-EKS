@@ -25,7 +25,7 @@ AWS IAM authenticator — Give permission with IAM roles to access our Kubernete
 Terraform — Infrastructure As Code tool. For installation https://www.terraform.io/downloads.html
 
 # Create web application
-Now, create a simple node.js web application that will print "Hello World"
+Create a simple node.js web application that will print "Hello World"
 
 Create a directory, named as "webapp".
 
@@ -47,13 +47,13 @@ Now, the server is running, hit the browser with IP:3000
 
 # Dockerize the web application
 
-Next,create a dockerfile and dockerize the web application.
+Create a dockerfile and dockerize the web application.
 
 **Note**: Use attached "Dockerfile".
 
 Run the below command from the webapp directoy where dockerfile and index.js file exist.
 
-*this will create the docker image and tag it with the name "webapp"*
+*This will create the docker image and tag it with the name "webapp"*
 
 -> docker build -t webapp .
 
