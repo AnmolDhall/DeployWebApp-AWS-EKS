@@ -30,7 +30,7 @@ Now, initialize the directory with npm by running below command:
 -> npm init
 now it will ask few configuration info, provide the same
 next run below command:
-# this is a framework to build web application
+// this is a framework to build web application
 -> npm install express --save
 
 Now, the webapp directory contains few folders and files basically some modules and configurations. Along with these files put "index.js" file and run below command:
@@ -39,6 +39,7 @@ Now, the webapp directory contains few folders and files basically some modules 
 Now the server is running, hit the browser with IP:3000
 Note: use the already attached "index.js file".
 
+# Dockerize web application
 Next, we can create a dockerfile and dockerize our web application.
 Please use attached "Dockerfile" for the same.
 
@@ -56,6 +57,7 @@ Next, tag and push the docker image to the repository on Docker hub
 -> docker tag webapp anmoldhall/webapp:latest
 -> docker push anmoldhall/webapp:latest
 
+# Provision Kuberentes EKS Cluster using Terraform
 
 Now, we need to create a EKS Cluster for which we will be using Terraform(IAC tool)
 
@@ -70,6 +72,8 @@ This will create an eks cluster and also creates the worker node.
 run below command for verification:
 kubectl get svc
 kubectl get nodes
+
+# Deploy application on to the K8s cluster
 
 Now, we are ready to deploy our application
 To deploy application we need to create a deployment in k8s cluster, which will deploy application on pods.
