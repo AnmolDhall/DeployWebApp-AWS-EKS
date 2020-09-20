@@ -2,11 +2,15 @@
 Deployment of nodejs "Hello World" web application on Kubernetes cluster using AWS EKS
 
 Create a simple web application using Node.js
+
 Create a docker image of the web application
-Push the created docker image to Docker hub
-Create a VPC with public and private subnets for our EKS Cluster
+
+Push the created docker image to Docker hub registry
+
 Create a Kubernetes Cluster using AWS EKS
+
 Create Kubernetes workers(public and private workers)
+
 Deploy our web application on Kubernetes
 
 # Prerequisites
