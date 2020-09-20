@@ -31,7 +31,7 @@ Create a directory, named as "webapp".
 
 Initialize the directory with npm by running below command:
 
--> `npm init`
+-> ```npm init```
 
 Provide configuration information such as name,version etc. and run below command:
 
