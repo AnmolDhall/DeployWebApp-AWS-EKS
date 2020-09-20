@@ -31,15 +31,15 @@ Create a directory, named as "webapp".
 
 Initialize the directory with npm by running below command:
 
--> npm init
+-> `npm init`
 
 Provide configuration information such as name,version etc. and run below command:
 
--> npm install express --save
+-> `npm install express --save`
 
 Above commands will generate some modules and configuration files in the webapp directory. Along with these files, put "index.js" file and run below command:
 
--> node index.js
+-> `node index.js`
 
 Now, the server is running, hit the browser with IP:3000
 
@@ -55,18 +55,18 @@ Run the below command from the webapp directoy where dockerfile and index.js fil
 
 *This will create the docker image and tag it with the name "webapp"*
 
--> docker build -t webapp .
+-> `docker build -t webapp` 
 
  Run below command and verify the image:
 
--> docker images
+-> `docker images`
 webapp     latest              f9de35d95fee        About a minute ago   911MB
 
 
 Now, tag and push the docker image to the repository on Docker hub
 
--> docker tag webapp anmoldhall/webapp:latest
--> docker push anmoldhall/webapp:latest
+-> `docker tag webapp anmoldhall/webapp:latest`
+-> `docker push anmoldhall/webapp:latest`
 
 # Provision Kuberentes EKS Cluster using Terraform
 
@@ -76,19 +76,19 @@ Check the attached directory *"Terraformed-EKS-Cluster"*, which contains various
 
 Run below commands from the Terraformed-EKS-Cluster directory
 
--> terraform init
+-> `terraform init`
 
--> terraform plan
+-> `terraform plan`
 
--> terraform apply
+-> `terraform apply`
 
 This will create an EKS cluster and also creates the worker node.
 
 Run below command for verification:
 
--> kubectl get svc
+-> `kubectl get svc`
 
--> kubectl get nodes
+-> `kubectl get nodes`
 
 # Deploy application on to the K8s cluster
 
@@ -98,11 +98,11 @@ To deploy application, create a deployment in k8s cluster, which will deploy app
 
 **Note:** Use the attached "deployment.yaml" file and run the below command:
 
--> kubectl apply -f deployment.yaml
+-> `kubectl apply -f deployment.yaml`
 
 Now, check the created deployment using below command:
 
--> kubectl get deployments
+-> `kubectl get deployments`
 
 Next, create a service to access web application.
 
@@ -110,10 +110,10 @@ Next, create a service to access web application.
 
  **Note:** Use the attached "service.yaml" file and run below command:
  
--> kubectl apply -f service.yaml
+-> `kubectl apply -f service.yaml`
 
 Verify the created service by running following command:
 
--> kubectl get services
+-> `kubectl get services`
 
 Finally, access the web application using the node ip and the nodePort.
