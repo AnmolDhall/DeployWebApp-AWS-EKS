@@ -66,6 +66,7 @@ webapp     latest              f9de35d95fee        About a minute ago   911MB
 Now, tag and push the docker image to the repository on Docker hub
 
 -> `docker tag webapp anmoldhall/webapp:latest`
+
 -> `docker push anmoldhall/webapp:latest`
 
 # Provision Kuberentes EKS Cluster using Terraform
